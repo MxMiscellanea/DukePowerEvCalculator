@@ -88,6 +88,23 @@
 
   #file-input { display: none; }
 
+  /* Instructions */
+  .instructions {
+    background: rgba(251, 191, 36, 0.08);
+    border: 1px solid rgba(251, 191, 36, 0.25);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  .instructions a {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+
   /* Privacy notice */
   .privacy {
     display: flex;
@@ -360,6 +377,12 @@
     <p class="filename" id="filename"></p>
   </div>
   <input type="file" id="file-input" accept=".xml">
+
+  <div class="instructions">
+    <strong>Don't have your data file yet?</strong>
+    Go to your <a href="https://p-auth.duke-energy.com/my-account/energy-usage" target="_blank" rel="noopener">Duke Energy Usage page</a>,
+    scroll down, and click the green <strong>"Download My Data"</strong> button.
+  </div>
 
   <div class="privacy">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
